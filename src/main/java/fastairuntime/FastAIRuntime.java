@@ -1,5 +1,6 @@
 package fastairuntime;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,6 +10,10 @@ public final class FastAIRuntime {
 
     public void register(FastTool tool) {
         registry.put(tool.name(), tool);
+    }
+
+    public Collection<FastTool> getRegisteredTools() {
+        return registry.values();
     }
 
     public FastObservation execute(FastCommand command) {
