@@ -1,0 +1,15 @@
+FastAIRuntime 0.1.0 (Alpha) - Deterministic OS Actuation Kernel for Java agents.
+
+This module provides the execution boundaries and strict tool registries for the FastJava ecosystem, enabling cognitive models to reliably automate operating system tasks (Process automation, keyboard input simulation, and file structures) under absolute deterministic rules.
+
+Key Features:
+- Low-latency tool registry for local-first systems.
+- Standardized FastCommand -> FastObservation loop bypassing raw API vulnerabilities.
+- Zero external runtime overhead.
+
+Maven Dependency (via JitPack):
+<dependency>
+    <groupId>com.github.andrestubbe</groupId>
+    <artifactId>FastAIRuntime</artifactId>
+    <version>0.1.0</version>
+</dependency>
