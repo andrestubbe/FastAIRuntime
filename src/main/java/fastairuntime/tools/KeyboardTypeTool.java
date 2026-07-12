@@ -24,9 +24,19 @@ public final class KeyboardTypeTool implements FastTool {
             // Basic AWT robot typing fallback for minimal demo
             for (char c : text.toCharArray()) {
                 int keyCode = KeyEvent.getExtendedKeyCodeForChar(c);
+                if (c == '*') keyCode = KeyEvent.VK_MULTIPLY;
+                else if (c == '+') keyCode = KeyEvent.VK_ADD;
+                else if (c == '-') keyCode = KeyEvent.VK_SUBTRACT;
+                else if (c == '/') keyCode = KeyEvent.VK_DIVIDE;
+                else if (c == '=') keyCode = KeyEvent.VK_EQUALS;
+                else if (c == ':') keyCode = KeyEvent.VK_COLON;
+                
                 if (KeyEvent.CHAR_UNDEFINED != keyCode) {
-                    robot.keyPress(keyCode);
-                    robot.keyRelease(keyCode);
+                    try {
+                        robot.keyPress(keyCode);
+                        robot.keyRelease(keyCode);
+                    } catch (IllegalArgumentException ignored) {
+                    }
                 }
             }
             return new SimpleObservation(true, "Typed: " + text);
