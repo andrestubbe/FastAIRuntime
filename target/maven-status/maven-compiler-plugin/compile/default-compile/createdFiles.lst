@@ -10,7 +10,6 @@ fastairuntime\tools\WindowsAppTool$SimpleObservation.class
 fastairuntime\tools\KeyboardTypeTool$SimpleObservation.class
 fastairuntime\tools\FileSaveTool$SimpleObservation.class
 fastairuntime\tools\WindowsAppTool.class
-demo\RuntimeDemo.class
 fastairuntime\tools\KeyboardTypeTool.class
 fastairuntime\tools\WindowsCloseAppTool.class
 fastairuntime\FastObservation.class
