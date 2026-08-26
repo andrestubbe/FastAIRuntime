@@ -117,6 +117,32 @@ Download the latest JARs directly to add them to your classpath:
 
 ---
 
+## Documentation
+
+* **[REFERENCE.md](docs/REFERENCE.md)**: Core API reference manual.
+* **[PHILOSOPHY.md](docs/PHILOSOPHY.md)**: Deterministic execution and sandboxing architecture.
+* **[COMPILE.md](docs/COMPILE.md)**: Build instructions.
+* **[CHANGELOG.md](docs/CHANGELOG.md)**: Project history and releases.
+* **[ROADMAP.md](docs/ROADMAP.md)**: Future milestones.
+
+---
+
+## Platform Support
+
+| Platform | Status |
+|----------|--------|
+| Windows 10/11 (x64) | ✅ Fully Supported |
+| Linux | 🚧 Planned |
+| macOS | 🚧 Planned |
+
+---
+
+## License
+
+MIT License — See [LICENSE](LICENSE) file for details.
+
+---
+
 ## Related Projects
 
 - [FastAI](https://github.com/andrestubbe/FastAI) — Unified AI client interface for Java
