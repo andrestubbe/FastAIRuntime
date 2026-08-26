@@ -13,15 +13,6 @@ FastAIRuntime is a **deterministic execution shell** that manages system automat
 
 ---
 
-## Technical Features
-
-- **🛡️ Secure Execution Boundaries** — Tools run via explicit command envelopes (`FastCommand`), yielding structured feedback (`FastObservation`).
-- **🔧 Unified Tool Registry** — Modular architecture to register local system utilities (UIA, Process tools, Keyboards).
-- **⚡ Zero Bloat** — Pure Java 17+ core with no external dependencies.
-- **🚀 Native Integrations** — Deeply integrated with FastJava's native subsystems (FastTerminal, FastUIA).
-
----
-
 ## Quick Start
 
 ```java
@@ -47,6 +38,15 @@ public class Demo {
     }
 }
 ```
+
+---
+
+## Key Features
+
+- **🛡️ Secure Execution Boundaries** — Tools run via explicit command envelopes (`FastCommand`), yielding structured feedback (`FastObservation`).
+- **🔧 Unified Tool Registry** — Modular architecture to register local system utilities (UIA, Process tools, Keyboards).
+- **⚡ Zero Bloat** — Pure Java 17+ core with no external dependencies.
+- **🚀 Native Integrations** — Deeply integrated with FastJava's native subsystems (FastTerminal, FastUIA).
 
 ---
 
