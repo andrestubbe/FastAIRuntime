@@ -41,6 +41,17 @@ public class Demo {
 
 ---
 
+## Why FastAIRuntime?
+
+Direct LLM function calling and unbounded script execution often result in fragile system states, unpredictable errors, and zero auditability. `FastAIRuntime` delivers:
+
+- **Deterministic Execution Envelopes** — Every tool execution is encapsulated into immutable `FastCommand` and `FastObservation` records.
+- **Strict Security Boundaries** — Sandboxed registries prevent arbitrary process execution and enforce explicit tool contracts.
+- **Sub-Millisecond Overhead** — Lightweight zero-dependency Java 17+ architecture designed for high-frequency agent loops.
+- **Deep FastJava Native Integration** — Native bridges to low-latency OS subsystems like FastTerminal, FastUIA, and FastKeyboard.
+
+---
+
 ## Key Features
 
 - **🛡️ Secure Execution Boundaries** — Tools run via explicit command envelopes (`FastCommand`), yielding structured feedback (`FastObservation`).
