@@ -11,6 +11,8 @@
 
 FastAIRuntime is a **deterministic execution shell** that manages system automation tools. By wrapping processes, hotkeys, and files behind strictly structured, observable execution boundaries (tools/commands), it enables cognitive agents to interact safely with the host operating system.
 
+[Watch Demo (YouTube)] | [Watch JMH Benchmark (Youtube)]
+
 ---
 
 ## Quick Start
