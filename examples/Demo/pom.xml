@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -6,7 +5,7 @@
 
     <groupId>com.github.andrestubbe</groupId>
     <artifactId>FastAIRuntime-Demo</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <packaging>jar</packaging>
 
     <name>FastAIRuntime Demo</name>
@@ -18,11 +17,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>com.github.andrestubbe</groupId>
             <artifactId>FastAIRuntime</artifactId>
-            <version>0.1.0</version>
+            <version>0.1.1</version>
         </dependency>
     </dependencies>
 
@@ -35,6 +41,14 @@
                 <configuration>
                     <source>17</source>
                     <target>17</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>demo.RuntimeDemo</mainClass>
                 </configuration>
             </plugin>
         </plugins>
